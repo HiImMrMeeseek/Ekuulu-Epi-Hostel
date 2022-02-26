@@ -1,0 +1,44 @@
+*{
+  --color-primario: #9ede73;
+  --color-primario1: #8ece63;
+  --color-primario2: #aeee83;
+  --color-primario3: #c5ffa0;
+
+  --color-secundario: #f7ea00;
+  --color-secundario1: #e7da00;
+  --color-secundario2: #fffa10;
+
+  --color-terciario: #e48900;
+  --color-terciario1: #d47900;
+  --color-terciario2: #f49910;
+
+  --color-detalles: #be0000;
+  --color-detalles1: #ae0000;
+  --color-detalles2: #ee5050;
+
+  --color-background: #e5ffcf;
+  --color-background1: #d5efbf;
+  --color-logo: #195829;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-background);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.cards-container {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  width: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}

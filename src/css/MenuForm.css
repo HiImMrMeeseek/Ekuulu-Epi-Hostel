@@ -1,0 +1,32 @@
+#form{
+    width: 500px;
+    padding: 50px 20px;
+    margin: auto;
+}
+
+#input{
+    border: 2px solid #6c757d;
+    border-right: 1px solid #6c757d;
+}
+
+#input:hover{
+    background: #6c757d;
+}
+
+#input:hover::placeholder{
+    color: #fff;
+}
+
+#input:focus{
+    border: none;
+}
+
+#button-addon2{
+    border: 2px solid #6c757d;
+    border-left: none;
+}
+
+#button-addon2:hover{
+    background: #6c757d;
+    color: #fff;
+}
