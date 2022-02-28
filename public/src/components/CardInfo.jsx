@@ -16,7 +16,16 @@ const CardInfo = ({ producto }) => {
 
 
   return (
-    <>
+    <>{/* <div className="cards-container">
+    {producto.map((item) =>
+      !item.image ? (
+        console.log(item.image)
+      ) : (<>
+      {console.log(producto)}
+        <CardInfo key={item.id} producto={item} />
+      </>          )
+    )}
+  </div> */}
       <div className="card">
         <div className="card-img-container">
           <img id="card-img" src={image} className="card-img-top" alt="..." />

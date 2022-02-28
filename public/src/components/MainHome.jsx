@@ -16,7 +16,8 @@ const MainHome = () => {
   const mostrarP = () => {
     var { id } = menuItems;
     id = ids[currentId];
-    console.log(id); 
+    console.log(id);
+    console.log(menuItems)
   };
 
   const inicioAPI = async () => {
@@ -50,7 +51,7 @@ const MainHome = () => {
   const LeftOnClick = () => {
     setCurrentId(currentId - 1)
     if (currentId < 0) {
-      currentId = ids.length - 2;
+      currentId = ids.length - 1;
     }
     mostrarP(currentId);
     console.log(currentId);
@@ -62,18 +63,20 @@ const MainHome = () => {
         <button onClick={() => LeftOnClick()} className="buttons">
           <img id="arrow" src={arrowL} alt="arrow left" />
         </button>
-        <div className="centro-container">
-          <h4 name="titulo" id="title-img">
-            {title}
-          </h4>
-          <h5>{restaurantChain}</h5>
-          <img
-            name="imgs"
-            className="imagen-centro"
-            src={image}
-            alt="main img"
-          />
-        </div>
+        <ul>
+          <div className="centro-container">
+            <h4 name="titulo" id="title-img">
+              {title}
+            </h4>
+            <h5>{restaurantChain}</h5>
+            <img
+              name="imgs"
+              className="imagen-centro"
+              src={image}
+              alt="main img"
+            />
+          </div>
+        </ul>
         <button onClick={() => RightOnClick()} className="buttons">
           <img id="arrow" src={arrowR} alt="arrow right" />
         </button>
